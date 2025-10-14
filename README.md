@@ -16,13 +16,6 @@ JavaScript (Basic interactivity)
 Font Awesome (Icons)
 Google Fonts (Poppins font family)
 
-License
-
-This project is open-source. Feel free to use it as a template for your own portfolio.
-
-Contact
-
-For inquiries, reach out via:
 
 Email: matthew.tian2005@gmail.com
 LinkedIn: linkedin.com/in/matthew-tian
