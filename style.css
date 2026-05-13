@@ -71,12 +71,20 @@ nav.scrolled {
 }
 
 .image-crop {
-  width: 100%;
-  top: 100px;
-  bottom: -100px;
   overflow: hidden;
   position: relative;
+  flex-shrink: 0;
+  /* Remove: width: 100%; top: 100px; bottom: -100px; — those do nothing */
+}
 
+.white-logo {
+  display: block;
+  /* Total height = desired nav logo height + the 31px of vertical whitespace in the image */
+  height: 67px;
+  /* → 67 - 31 = 36px visible logo height */
+  width: auto;
+  margin-top: -15.5px;
+  /* crop top half of the 31px vertical whitespace */
 }
 
 .nav-links {
@@ -252,7 +260,7 @@ nav.scrolled {
   left: 80px;
   /* Adjust as needed */
   font-family: 'Josefin Sans', sans-serif;
-  font-size: clamp(55px, 17vw, 250px);
+  font-size: clamp(55px, 8.5vw, 250px);
   font-weight: 180;
   letter-spacing: -0.02em;
   line-height: 1;
@@ -311,17 +319,36 @@ nav.scrolled {
   width: 240px;
   background: linear-gradient(to right, var(--bg), transparent);
   z-index: 1;
+  pointer-events: none;
+}
+
+.photo-area::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 35%;
+  background: linear-gradient(to bottom, transparent, var(--bg));
+  z-index: 1;
+  pointer-events: none;
 }
 
 .photo-placeholder {
   width: 100%;
   height: 100%;
   background: linear-gradient(155deg, #d9d6d0 0%, #c4c0b8 50%, #b3afa8 100%);
+  /* ← add this back */
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  gap: 10px;
+  overflow: hidden;
+}
+
+.photo-placeholder img {
+  height: 100%;
+  width: auto;
+  display: block;
 }
 
 .photo-placeholder p {
@@ -640,6 +667,30 @@ nav.scrolled {
   opacity: 1;
 }
 
+.projects-more {
+  text-align: center;
+  margin-top: 40px;
+  /* Add spacing above the button */
+}
+
+.more-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  background-color: var(--text);
+  /* Use your text color variable or replace with a color like #1a1a18 */
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.more-button:hover {
+  background-color: var(--muted);
+  /* Use a lighter color for hover effect */
+}
+
 /* EXPERIENCE */
 #experience {
   background: var(--bg2);
@@ -949,4 +1000,42 @@ footer {
   to {
     opacity: 1;
   }
+}
+
+/* ORG LOGO */
+.timeline-org-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.org-logo {
+  width: 28px;
+  height: 28px;
+  border-radius: 5px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 7px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: var(--muted);
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.org-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 3px;
+}
+
+/* CONTACT alignment fix */
+.contact-form-wrapper {
+  padding-top: 54px;
 }
