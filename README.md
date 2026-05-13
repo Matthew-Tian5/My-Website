@@ -2,7 +2,7 @@
 
 A minimal, editorial-style personal portfolio website built with vanilla HTML, CSS, and JavaScript. Designed to showcase projects, skills, and experience as a Computer Science & Economics student at Wilfrid Laurier University.
 
-**Live site:** [matthew-tian5.github.io](https://matthew-tian5.github.io)
+**Live site:** [https://matthew-tian5.github.io/My-Website/](https://matthew-tian5.github.io/)
 
 ---
 
