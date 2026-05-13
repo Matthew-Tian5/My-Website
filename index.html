@@ -98,18 +98,40 @@
   <!-- ABOUT -->
   <section id="about">
     <div class="section-wrap">
+
+      <!-- Section tag moves ABOVE the grid -->
+      <div class="reveal">
+        <div class="section-tag"><span class="section-num">01</span>About Me</div>
+      </div>
+
       <div class="about-grid">
         <div class="reveal">
-          <div class="section-tag"><span class="section-num">01</span>About Me</div>
           <h2 class="section-heading" style="margin-bottom:0">Who<br>I Am</h2>
+          <div class="about-collage">
+            <div class="collage-item">
+              <img src="images/F1.jpeg" alt="F1 Racing">
+              <span class="collage-label">F1</span>
+            </div>
+            <div class="collage-item">
+              <img src="images/IMG_5998.jpg" alt="Espresso my cat">
+              <span class="collage-label">Espresso</span>
+            </div>
+            <div class="collage-item">
+              <img src="images/IMG_2979.jpg" alt="At the gym">
+              <span class="collage-label">Gym</span>
+            </div>
+          </div>
         </div>
-        <div class="reveal delay-2">
+
+        <div class="reveal delay-about">
           <p class="about-body">I'm a third-year <em>Computer Science &amp; Economics</em> double degree student at
             Wilfrid Laurier University, graduating in 2028. I spend my time building software, thinking through
             algorithms, and exploring how technology can create real-world impact.</p>
           <p class="about-body">Through <em>Enactus Laurier</em> and Verdanza Tech, I lead projects that sit at the
-            intersection of tech and social value. I'm actively building toward graduate research in CS and AI at a US
-            university.</p>
+            intersection of tech and social value. I'm actively building toward graduate research in CS and AI.</p>
+
+          <p class="about-body">In my spare time, I enjoy going to the gym, watching F1, and hangingout with my cat
+            Espresso</p>
           <div class="about-pills">
             <span class="pill">Algorithms</span>
             <span class="pill">Machine Learning</span>
@@ -127,17 +149,16 @@
               <div class="value-num">WLU</div>
               <div class="value-label">Waterloo, ON</div>
             </div>
+
             <div>
-              <div class="value-num">2×</div>
-              <div class="value-label">Double degree</div>
+              <div class="value-num">3rd</div>
+              <div class="value-label">Junior</div>
             </div>
-            <div>
-              <div class="value-num">US MS</div>
-              <div class="value-label">CS/AI goal</div>
-            </div>
+
           </div>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -412,20 +433,25 @@
   <!-- CONTACT -->
   <section id="contact">
     <div class="section-wrap">
+
+      <!-- Section tag moves ABOVE the grid -->
+      <div class="reveal">
+        <div class="section-tag"><span class="section-num">05</span>Contact</div>
+      </div>
+
       <div class="contact-grid">
         <div class="reveal">
-          <div class="section-tag"><span class="section-num">05</span>Contact</div>
           <h2 class="section-heading" style="margin-bottom:28px">Let's<br>Talk</h2>
           <p class="contact-intro">Whether it's a research opportunity, a project collaboration, or just a conversation
             about CS and AI — I'd love to hear from you.</p>
           <div class="contact-links">
             <div class="contact-link-item">
               <span class="contact-link-label">Email</span>
-              <a href="matthew.tian2005@gmail.com" class="contact-link-value">matthew.tian2005@gmail.com ↗</a>
+              <a href="mailto:matthew.tian2005@gmail.com" class="contact-link-value">matthew.tian2005@gmail.com ↗</a>
             </div>
             <div class="contact-link-item">
               <span class="contact-link-label">LinkedIn</span>
-              <a href="https://www.linkedin.com/in/matthew-tian-toronto/?skipRedirect=true"
+              <a href="https://www.linkedin.com/in/matthew-tian-toronto/"
                 class="contact-link-value">linkedin.com/in/matthew-tian-toronto ↗</a>
             </div>
             <div class="contact-link-item">
@@ -436,39 +462,40 @@
             <div class="contact-link-item">
               <span class="contact-link-label">Instagram</span>
               <a href="https://www.instagram.com/matthew.0520m/" class="contact-link-value"
-                target="_blank">@matthew.0520m
-                ↗</a>
+                target="_blank">@matthew.0520m ↗</a>
             </div>
             <div class="contact-link-item">
-              <span class="contact-link-label">Locations</span>
-              <span class="contact-link-value">Mississauga, Waterloo, Toronto Ontario, Canada</span>
+              <span class="contact-link-label">Location</span>
+              <span class="contact-link-value">Mississauga, Waterloo, Toronto · Ontario, Canada</span>
             </div>
           </div>
         </div>
 
-        <!-- contact-form-wrapper adds top padding to align form with left column content -->
-        <div class="reveal delay-2 contact-form-wrapper">
-          <form class="contact-form" onsubmit="return false;">
-            <div class="form-group">
-              <label class="form-label">Your Name</label>
-              <input class="form-input" type="text" placeholder="Jane Smith">
-            </div>
-            <div class="form-group">
-              <label class="form-label">Email Address</label>
-              <input class="form-input" type="email" placeholder="jane@example.com">
-            </div>
-            <div class="form-group">
-              <label class="form-label">Subject</label>
-              <input class="form-input" type="text" placeholder="Research opportunity, collaboration...">
-            </div>
-            <div class="form-group">
-              <label class="form-label">Message</label>
-              <textarea class="form-textarea" placeholder="Tell me about it..."></textarea>
-            </div>
-            <button class="form-submit" type="submit">Send Message →</button>
-          </form>
+        <div class="reveal contact-form-wrapper">
+          <div class="delay-contact">
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label class="form-label">Your Name</label>
+                <input class="form-input" type="text" id="senderName" placeholder="Jane Smith">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email Address</label>
+                <input class="form-input" type="email" id="senderEmail" placeholder="jane@example.com">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Subject</label>
+                <input class="form-input" type="text" id="subject" placeholder="Research opportunity, collaboration...">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Message</label>
+                <textarea class="form-textarea" id="message" placeholder="Tell me about it..."></textarea>
+              </div>
+              <button class="form-submit" type="submit">Send Message →</button>
+            </form>
+          </div>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -533,6 +560,22 @@
         mobileMenu.classList.remove('open');
         document.body.style.overflow = '';
       });
+    });
+
+
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById('senderName').value;
+      const email = document.getElementById('senderEmail').value;
+      const subject = document.getElementById('subject').value;
+      const message = document.getElementById('message').value;
+
+      const to = 'matthew.tian2005@gmail.com';
+      const body = `Hi Matthew,%0D%0A%0D%0A${encodeURIComponent(message)}%0D%0A%0D%0A— ${encodeURIComponent(name)}%0D%0AReply to: ${encodeURIComponent(email)}`;
+      const sub = encodeURIComponent(subject || 'Portfolio Inquiry');
+
+      window.location.href = `mailto:${to}?subject=${sub}&body=${body}`;
     });
   </script>
 </body>
