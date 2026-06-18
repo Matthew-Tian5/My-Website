@@ -4,18 +4,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO -->
+  <title>Matthew Tian | Computer Science & Economics Student, ML & Software Developer</title>
   <meta name="description"
-    content="Matthew Tian's personal website showcasing projects, skills, education, and experience in Computer Science and Economics.">
-  <meta name="keywords"
-    content="Matthew Tian, Computer Science, Economics, Projects, Skills, Education, AI, Machine Learning">
+    content="Matthew Tian is a Computer Science and Economics student at Wilfrid Laurier University building machine learning and full-stack software projects. See his work, skills, and experience.">
   <meta name="author" content="Matthew Tian">
-  <meta property="og:title" content="Matthew Tian — Computer Science & Economics Portfolio">
+  <link rel="canonical" href="https://matthew-tian5.github.io/My-Website/">
+
+  <!-- Open Graph (LinkedIn, Slack, iMessage previews) -->
+  <meta property="og:title" content="Matthew Tian | Computer Science & Economics Student">
   <meta property="og:description"
-    content="Showcasing projects, skills, and experience in Computer Science and Economics.">
-  <meta property="og:image" content="images/preview.png">
-  <meta property="og:url" content="https://matthew-tian5.github.io">
+    content="ML and full-stack projects, skills, and experience from a CS and Economics student at Wilfrid Laurier University.">
+  <meta property="og:image" content="https://matthew-tian5.github.io/My-Website/images/matthew-tian-headshot.png">
+  <meta property="og:url" content="https://matthew-tian5.github.io/My-Website/">
   <meta property="og:type" content="website">
-  <title>Matthew — CS & Economics</title>
+  <meta property="og:site_name" content="Matthew Tian">
+
+  <!-- Twitter / X card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Matthew Tian | Computer Science & Economics Student">
+  <meta name="twitter:description"
+    content="ML and full-stack projects, skills, and experience from a CS and Economics student at Wilfrid Laurier University.">
+  <meta name="twitter:image" content="https://matthew-tian5.github.io/My-Website/images/matthew-tian-headshot.png">
+
+  <!-- Structured data for Google and AI crawlers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Matthew Tian",
+    "url": "https://matthew-tian5.github.io/My-Website/",
+    "image": "https://matthew-tian5.github.io/My-Website/images/matthew-tian-headshot.png",
+    "jobTitle": "Computer Science & Economics Student, ML & Software Developer",
+    "email": "matthew.tian2005@gmail.com",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Wilfrid Laurier University"
+    },
+    "homeLocation": {
+      "@type": "Place",
+      "name": "Ontario, Canada"
+    },
+    "knowsAbout": [
+      "Machine Learning", "PyTorch", "Algorithms", "Data Structures",
+      "Full-Stack Development", "Python", "Java", "Economics", "Systems Design"
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/matthew-tian-toronto/",
+      "https://github.com/Matthew-Tian5",
+      "https://www.instagram.com/matthew.0520m/"
+    ]
+  }
+  </script>
+
+  <!-- Fonts & styles -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="style.css">
@@ -26,13 +69,12 @@
 </head>
 
 <body>
-
   <!-- NAV -->
   <nav id="navbar">
     <div class="nav-left">
       <a href="#home">
         <div class="image-crop">
-          <img src="images/logo-white.png" alt="Matthew Tian's White Logo" class="white-logo">
+          <img src="images/logo-white.png" alt="Matthew Tian logo" class="white-logo">
         </div>
       </a>
       <ul class="nav-links">
@@ -44,7 +86,6 @@
       </ul>
     </div>
     <a href="mailto:matthew.tian2005@gmail.com" class="nav-cta">Get In Touch ↗</a>
-    <!-- ADD THIS -->
     <button class="nav-hamburger" id="navHamburger" aria-label="Open menu">
       <span></span><span></span><span></span>
     </button>
@@ -59,463 +100,435 @@
     <a href="mailto:matthew.tian2005@gmail.com" class="mobile-cta">Get In Touch ↗</a>
   </div>
 
-  <!-- HERO -->
-  <section id="home">
-    <div class="hero-sidebar-label">CS &amp; Economics</div>
-    <div class="hero-line"></div>
-    <div class="hero-year">2026</div>
-    <div class="hero-stats">
-      <div>
-        <div class="stat-number">16<sup>+</sup></div>
-        <div class="stat-label">Projects built</div>
-      </div>
-      <div>
-        <div class="stat-number">3<sup>rd</sup></div>
-        <div class="stat-label">Year student</div>
-      </div>
-    </div>
-    <div class="hero-hello">Hello</div>
-    <div class="hero-matthew">Im Matthew</div>
-    <div class="hero-sub"> a CS &amp; Economics student</div>
-    <div class="scroll-hint" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Scroll down
-      ↓</div>
-    <div class="photo-area">
-      <div class="photo-placeholder">
-        <img src="images/Website Headshot transparent.PNG" alt="Your Photo">
-      </div>
-      <svg width="44" height="44" viewBox="0 0 44 44" fill="none" opacity="0.35">
-        <circle cx="22" cy="16" r="7.5" stroke="#7a7872" stroke-width="1.2" />
-        <path d="M6 38c0-8.837 7.163-16 16-16s16 7.163 16 16" stroke="#7a7872" stroke-width="1.2"
-          stroke-linecap="round" />
-      </svg>
-      <p></p>
-      </img>
-    </div>
-  </section>
-
-  <div class="divider-first"></div>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="section-wrap">
-
-      <!-- Section tag moves ABOVE the grid -->
-      <div class="reveal">
-        <div class="section-tag"><span class="section-num">01</span>About Me</div>
-      </div>
-
-      <div class="about-grid">
-        <div class="reveal">
-          <h2 class="section-heading" style="margin-bottom:0">Who<br>I Am</h2>
-          <div class="about-collage">
-            <div class="collage-item">
-              <img src="images/F1.jpeg" alt="F1 Racing">
-              <span class="collage-label">F1</span>
-            </div>
-            <div class="collage-item">
-              <img src="images/IMG_5998.jpg" alt="Espresso my cat">
-              <span class="collage-label">Espresso</span>
-            </div>
-            <div class="collage-item">
-              <img src="images/IMG_2979.jpg" alt="At the gym">
-              <span class="collage-label">Gym</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="reveal delay-about">
-          <p class="about-body">I'm a third-year <em>Computer Science &amp; Economics</em> double degree student at
-            Wilfrid Laurier University, graduating in 2028. I spend my time building software, thinking through
-            algorithms, and exploring how technology can create real-world impact.</p>
-          <p class="about-body">Through <em>Enactus Laurier</em> and Verdanza Tech, I lead projects that sit at the
-            intersection of tech and social value. I'm actively building toward graduate research in CS and AI.</p>
-
-          <p class="about-body">In my spare time, I enjoy going to the gym, watching F1, and hangingout with my cat
-            Espresso</p>
-          <div class="about-pills">
-            <span class="pill">Algorithms</span>
-            <span class="pill">Machine Learning</span>
-            <span class="pill">Full-Stack Dev</span>
-            <span class="pill">Economics</span>
-            <span class="pill">Systems Design</span>
-            <span class="pill">Research</span>
-          </div>
-          <div class="about-values">
-            <div>
-              <div class="value-num">2028</div>
-              <div class="value-label">Graduating</div>
-            </div>
-            <div>
-              <div class="value-num">WLU</div>
-              <div class="value-label">Waterloo, ON</div>
-            </div>
-
-            <div>
-              <div class="value-num">3rd</div>
-              <div class="value-label">Junior</div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- SKILLS -->
-  <section id="skills">
-    <div class="section-wrap">
-      <div class="reveal">
-        <div class="section-tag"><span class="section-num">02</span>Skills</div>
-        <h2 class="section-heading">What I<br>Work With</h2>
-      </div>
-      <div class="skills-grid">
-        <div class="skill-col reveal delay-1">
-          <div class="skill-col-title">Languages</div>
-          <ul class="skill-list">
-            <li><span class="skill-dot"></span>Python</li>
-            <li><span class="skill-dot"></span>Java</li>
-            <li><span class="skill-dot"></span>JavaScript</li>
-            <li><span class="skill-dot"></span>C</li>
-            <li><span class="skill-dot"></span>C++</li>
-            <li><span class="skill-dot"></span>PyTorch</li>
-            <li><span class="skill-dot"></span>SQL</li>
-            <li><span class="skill-dot"></span>ARM Assembly</li>
-          </ul>
-        </div>
-        <div class="skill-col reveal delay-2">
-          <div class="skill-col-title">Frameworks</div>
-          <ul class="skill-list">
-            <li><span class="skill-dot"></span>React</li>
-            <li><span class="skill-dot"></span>Node.js</li>
-            <li><span class="skill-dot"></span>Pandas</li>
-            <li><span class="skill-dot"></span>NumPy</li>
-            <li><span class="skill-dot"></span>scikit-learn</li>
-            <li><span class="skill-dot"></span>HTML / CSS</li>
-            <li><span class="skill-dot"></span>Tailwind CSS</li>
-            <li><span class="skill-dot"></span>REST APIs</li>
-
-          </ul>
-        </div>
-        <div class="skill-col reveal delay-3">
-          <div class="skill-col-title">CS Concepts</div>
-          <ul class="skill-list">
-            <li><span class="skill-dot"></span>Algorithms &amp; DS</li>
-            <li><span class="skill-dot"></span>Dynamic Programming</li>
-            <li><span class="skill-dot"></span>Graph Theory</li>
-            <li><span class="skill-dot"></span>Database Design</li>
-            <li><span class="skill-dot"></span>OOP &amp; Systems</li>
-            <li><span class="skill-dot"></span>Data Structures</li>
-          </ul>
-        </div>
-        <div class="skill-col reveal delay-4">
-          <div class="skill-col-title">Tools</div>
-          <ul class="skill-list">
-            <li><span class="skill-dot"></span>Git &amp; GitHub</li>
-            <li><span class="skill-dot"></span>Linux / Bash</li>
-            <li><span class="skill-dot"></span>AWS</li>
-            <li><span class="skill-dot"></span>VS Code</li>
-            <li><span class="skill-dot"></span>Docker</li>
-            <li><span class="skill-dot"></span>Google Cloud</li>
-            <li><span class="skill-dot"></span>MySQL</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <div class="section-wrap">
-      <div class="projects-header reveal">
+  <main>
+    <!-- HERO -->
+    <section id="home">
+      <div class="hero-sidebar-label">CS &amp; Economics</div>
+      <div class="hero-line"></div>
+      <div class="hero-year">2026</div>
+      <div class="hero-stats">
         <div>
-          <div class="section-tag"><span class="section-num">03</span>Projects</div>
-          <h2 class="section-heading">Things I've<br>Built</h2>
+          <div class="stat-number">16<sup>+</sup></div>
+          <div class="stat-label">Projects built</div>
         </div>
-        <a href="https://github.com/Matthew-Tian5" class="view-all" target="_blank">View all on GitHub ↗</a>
-      </div>
-      <div class="projects-grid">
-
-        <div class="project-card reveal delay-1">
-          <div class="project-num">01</div>
-          <div class="project-name">House Price Predictor</div>
-          <p class="project-desc">ML model trained on the California Housing dataset to predict house prices using
-            regression techniques, data preprocessing, and model evaluation pipelines.</p>
-          <div class="project-tags"><span class="tag">Python</span><span class="tag">scikit-learn</span><span
-              class="tag">ML</span></div>
-          <a href="https://github.com/Matthew-Tian5/House-Price-Predictor-ML" class="project-link" target="_blank">View
-            on GitHub ↗</a>
-        </div>
-
-        <div class="project-card reveal delay-2">
-          <div class="project-num">02</div>
-          <div class="project-name">Sentiment Analyzer</div>
-          <p class="project-desc">PyTorch neural network classifying IMDB movie reviews using word embeddings and mean
-            pooling. Achieves 85% test accuracy across 25,000 reviews.</p>
-          <div class="project-tags"><span class="tag">Python</span><span class="tag">PyTorch</span><span
-              class="tag">NLP</span></div>
-          <a href="https://github.com/Matthew-Tian5/Sentiment-Analyzer-Neural-Net-" class="project-link"
-            target="_blank">View on GitHub ↗</a>
-        </div>
-
-        <div class="project-card reveal delay-3">
-          <div class="project-num">03</div>
-          <div class="project-name">MediVision</div>
-          <p class="project-desc">Pharmaceutical web app powered by Google Gemini to help patients, doctors, and
-            pharmacists prescribe and manage medications safely and on time.</p>
-          <div class="project-tags"><span class="tag">TypeScript</span><span class="tag">Gemini AI</span><span
-              class="tag">Full-Stack</span></div>
-          <a href="https://github.com/Matthew-Tian5/MediVision" class="project-link" target="_blank">View on GitHub
-            ↗</a>
-        </div>
-
-        <div class="project-card reveal delay-1">
-          <div class="project-num">04</div>
-          <div class="project-name">Vulnerability Scanner</div>
-          <p class="project-desc">Python security tool that scans networks and websites for known vulnerabilities,
-            generating a detailed report of discovered security holes.</p>
-          <div class="project-tags"><span class="tag">Python</span><span class="tag">Cybersecurity</span><span
-              class="tag">Networking</span></div>
-          <a href="https://github.com/Matthew-Tian5/Vulnerability-Scanner" class="project-link" target="_blank">View on
-            GitHub ↗</a>
-        </div>
-
-        <div class="project-card reveal delay-2">
-          <div class="project-num">05</div>
-          <div class="project-name">YouTube Downloader</div>
-          <p class="project-desc">Python CLI tool that lets users paste any YouTube link and download the video for
-            free, bypassing paid access restrictions.</p>
-          <div class="project-tags"><span class="tag">Python</span><span class="tag">Web Scraping</span><span
-              class="tag">CLI</span></div>
-          <a href="https://github.com/Matthew-Tian5/Free-Youtube-Video-Download" class="project-link"
-            target="_blank">View on GitHub ↗</a>
-        </div>
-
-        <div class="project-card reveal delay-3">
-          <div class="project-num">06</div>
-          <div class="project-name">AI Wikipedia Bot</div>
-          <p class="project-desc">AI-powered chatbot that searches Wikipedia's database to answer any question the user
-            asks, surfacing accurate, sourced information instantly.</p>
-          <div class="project-tags"><span class="tag">Python</span><span class="tag">AI</span><span
-              class="tag">Wikipedia API</span></div>
-          <a href="https://github.com/Matthew-Tian5/AI-Bot" class="project-link" target="_blank">View on GitHub ↗</a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- EXPERIENCE -->
-  <section id="experience">
-    <div class="section-wrap">
-      <div class="reveal">
-        <div class="section-tag"><span class="section-num">04</span>Experience</div>
-        <h2 class="section-heading">Education &amp;<br>Work</h2>
-      </div>
-      <div class="exp-layout">
-
-        <!-- EDUCATION -->
-        <div class="reveal delay-1">
-          <div class="exp-col-title">Education</div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">2022 — 2028</div>
-            <div class="timeline-role">BSc Computer Science &amp; BA Economics</div>
-            <div class="timeline-org-row">
-              <div class="org-logo">
-                <!-- Replace with: <img src="images/logos/wlu.png" alt="WLU"> -->
-                WLU
-              </div>
-              <span class="timeline-org">Wilfrid Laurier University · Waterloo, ON</span>
-            </div>
-            <div class="timeline-desc">Double degree combining rigorous CS theory — algorithms, systems, databases, AI —
-              with microeconomics and quantitative methods. Building toward US graduate school applications in CS/AI.
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">May 2025 — July 2025</div>
-            <div class="timeline-role">Google Cybersecurity Certificate</div>
-            <div class="timeline-org-row">
-              <div class="org-logo">
-                <!-- Replace with: <img src="images/logos/google.png" alt="Google"> -->
-                G
-              </div>
-              <span class="timeline-org">Google · Online</span>
-            </div>
-            <div class="timeline-desc">Completed Google's professional training program covering network security,
-              threat detection, incident response, and risk assessment. Gained hands-on experience with Linux CLI, SQL
-              for security analysis, and the NIST Cybersecurity Framework.</div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">Graduated 2022</div>
-            <div class="timeline-role">Ontario Secondary School Diploma</div>
-            <div class="timeline-org-row">
-              <div class="org-logo">
-                <!-- Replace with: <img src="images/logos/gonzaga.png" alt="Gonzaga"> -->
-                SAG
-              </div>
-              <span class="timeline-org">St. Aloysius Gonzaga Secondary School · Mississauga, ON</span>
-            </div>
-            <div class="timeline-desc">Completed secondary school education in Mississauga, Ontario.</div>
-          </div>
-
-        </div>
-
-        <!-- WORK -->
-        <div class="reveal delay-2">
-          <div class="exp-col-title">Work &amp; Activities</div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">Sep 2025 — Dec 2025</div>
-            <div class="timeline-role">Frontend Engineering Intern</div>
-            <div class="timeline-org-row">
-              <div class="org-logo">
-                <!-- Replace with: <img src="images/logos/runwayto.png" alt="RunwayTo"> -->
-                RT
-              </div>
-              <span class="timeline-org">RunwayTo · Toronto, ON</span>
-            </div>
-            <div class="timeline-desc">Implemented responsive frontend features for 3 client projects using HTML5, CSS3,
-              and JavaScript through iterative sprint cycles, improving user satisfaction scores by 25%. Configured
-              deployment pipeline via S-Panel, integrating with a MySQL photo database to serve 10,000+ images at a
-              2-second average load time.</div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">2023 — Present</div>
-            <div class="timeline-role">Project Lead — Verdanza Tech</div>
-            <div class="timeline-org-row">
-              <div class="org-logo">
-                <!-- Replace with: <img src="images/logos/enactus.png" alt="Enactus"> -->
-                EN
-              </div>
-              <span class="timeline-org">Enactus Laurier · Waterloo, ON</span>
-            </div>
-            <div class="timeline-desc">Leading a student-driven tech initiative building software to create measurable
-              economic opportunity for underserved communities.</div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">May 2024 — Aug 2024</div>
-            <div class="timeline-role">Software Intern</div>
-            <div class="timeline-org-row">
-              <div class="org-logo">
-                <!-- Replace with: <img src="images/logos/blowout.png" alt="Blowout"> -->
-                BT
-              </div>
-              <span class="timeline-org">Blowout Technologies · Remote</span>
-            </div>
-            <div class="timeline-desc">Developed a drag-and-drop web app enabling small businesses and creators to
-              publish mobile apps to the Play Store and App Store. Built with Swift, JavaScript, and ASP.NET on AWS
-              infrastructure.</div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">2024</div>
-            <div class="timeline-role">Freelance Developer</div>
-            <div class="timeline-org-row">
-              <div class="org-logo">
-                <!-- Replace with: <img src="images/logos/esther.png" alt="Esther"> -->
-                EMS
-              </div>
-              <span class="timeline-org">Esther Music Studio · Remote</span>
-            </div>
-            <div class="timeline-desc">Built and deployed a student-teacher platform with messaging and Google Picker
-              API file sharing. Live at mybc.esthermusicstudio.com.</div>
-          </div>
-
+        <div>
+          <div class="stat-number">3<sup>rd</sup></div>
+          <div class="stat-label">Year student</div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="section-wrap">
-
-      <!-- Section tag moves ABOVE the grid -->
-      <div class="reveal">
-        <div class="section-tag"><span class="section-num">05</span>Contact</div>
+      <div class="hero-hello">Hello</div>
+      <h1 class="hero-matthew">I'm Matthew Tian</h1>
+      <div class="hero-sub"> a CS &amp; Economics student</div>
+      <div class="scroll-hint" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Scroll
+        down ↓</div>
+      <div class="photo-area">
+        <div class="photo-placeholder">
+          <img src="images/matthew-tian-headshot.png"
+            alt="Matthew Tian, Computer Science and Economics student at Wilfrid Laurier University"
+            fetchpriority="high" decoding="async">
+          <svg width="44" height="44" viewBox="0 0 44 44" fill="none" opacity="0.35">
+            <circle cx="22" cy="16" r="7.5" stroke="#7a7872" stroke-width="1.2" />
+            <path d="M6 38c0-8.837 7.163-16 16-16s16 7.163 16 16" stroke="#7a7872" stroke-width="1.2"
+              stroke-linecap="round" />
+          </svg>
+        </div>
       </div>
+    </section>
 
-      <div class="contact-grid">
+    <div class="divider-first"></div>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="section-wrap">
+        <!-- Section tag moves ABOVE the grid -->
         <div class="reveal">
-          <h2 class="section-heading" style="margin-bottom:28px">Let's<br>Talk</h2>
-          <p class="contact-intro">Whether it's a research opportunity, a project collaboration, or just a conversation
-            about CS and AI — I'd love to hear from you.</p>
-          <div class="contact-links">
-            <div class="contact-link-item">
-              <span class="contact-link-label">Email</span>
-              <a href="mailto:matthew.tian2005@gmail.com" class="contact-link-value">matthew.tian2005@gmail.com ↗</a>
-            </div>
-            <div class="contact-link-item">
-              <span class="contact-link-label">LinkedIn</span>
-              <a href="https://www.linkedin.com/in/matthew-tian-toronto/"
-                class="contact-link-value">linkedin.com/in/matthew-tian-toronto ↗</a>
-            </div>
-            <div class="contact-link-item">
-              <span class="contact-link-label">GitHub</span>
-              <a href="https://github.com/Matthew-Tian5" class="contact-link-value"
-                target="_blank">github.com/Matthew-Tian5 ↗</a>
-            </div>
-            <div class="contact-link-item">
-              <span class="contact-link-label">Instagram</span>
-              <a href="https://www.instagram.com/matthew.0520m/" class="contact-link-value"
-                target="_blank">@matthew.0520m ↗</a>
-            </div>
-            <div class="contact-link-item">
-              <span class="contact-link-label">Location</span>
-              <span class="contact-link-value">Mississauga, Waterloo, Toronto · Ontario, Canada</span>
+          <div class="section-tag"><span class="section-num">01</span>About Me</div>
+        </div>
+        <div class="about-grid">
+          <div class="reveal">
+            <h2 class="section-heading" style="margin-bottom:0">Who<br>I Am</h2>
+            <div class="about-collage">
+              <div class="collage-item">
+                <img src="images/f1-racing.jpeg" alt="Formula 1 racing" loading="lazy" decoding="async">
+                <span class="collage-label">F1</span>
+              </div>
+              <div class="collage-item">
+                <img src="images/espresso-cat.jpg" alt="Espresso, Matthew's cat" loading="lazy" decoding="async">
+                <span class="collage-label">Espresso</span>
+              </div>
+              <div class="collage-item">
+                <img src="images/gym.jpg" alt="Matthew at the gym" loading="lazy" decoding="async">
+                <span class="collage-label">Gym</span>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div class="reveal contact-form-wrapper">
-          <div class="delay-contact">
-            <form class="contact-form" id="contactForm">
-              <div class="form-group">
-                <label class="form-label">Your Name</label>
-                <input class="form-input" type="text" id="senderName" placeholder="Jane Smith">
+          <div class="reveal delay-about">
+            <p class="about-body">I'm a third-year <em>Computer Science &amp; Economics</em> double degree student at
+              Wilfrid Laurier University, graduating in 2028. I spend my time building software, thinking through
+              algorithms, and exploring how technology can create real-world impact.</p>
+            <p class="about-body">Through <em>Enactus Laurier</em> and Verdanza Tech, I lead projects that sit at the
+              intersection of tech and social value. I'm actively building toward graduate research in CS and AI.</p>
+            <p class="about-body">In my spare time, I enjoy going to the gym, watching F1, and hanging out with my cat
+              Espresso.</p>
+            <div class="about-pills">
+              <span class="pill">Algorithms</span>
+              <span class="pill">Machine Learning</span>
+              <span class="pill">Full-Stack Dev</span>
+              <span class="pill">Economics</span>
+              <span class="pill">Systems Design</span>
+              <span class="pill">Research</span>
+            </div>
+            <div class="about-values">
+              <div>
+                <div class="value-num">2028</div>
+                <div class="value-label">Graduating</div>
               </div>
-              <div class="form-group">
-                <label class="form-label">Email Address</label>
-                <input class="form-input" type="email" id="senderEmail" placeholder="jane@example.com">
+              <div>
+                <div class="value-num">WLU</div>
+                <div class="value-label">Waterloo, ON</div>
               </div>
-              <div class="form-group">
-                <label class="form-label">Subject</label>
-                <input class="form-input" type="text" id="subject" placeholder="Research opportunity, collaboration...">
+              <div>
+                <div class="value-num">3rd</div>
+                <div class="value-label">Junior</div>
               </div>
-              <div class="form-group">
-                <label class="form-label">Message</label>
-                <textarea class="form-textarea" id="message" placeholder="Tell me about it..."></textarea>
-              </div>
-              <button class="form-submit" type="submit">Send Message →</button>
-            </form>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-    </div>
-  </section>
+    <div class="divider"></div>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="section-wrap">
+        <div class="reveal">
+          <div class="section-tag"><span class="section-num">02</span>Skills</div>
+          <h2 class="section-heading">What I<br>Work With</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-col reveal delay-1">
+            <div class="skill-col-title">Languages</div>
+            <ul class="skill-list">
+              <li><span class="skill-dot"></span>Python</li>
+              <li><span class="skill-dot"></span>Java</li>
+              <li><span class="skill-dot"></span>JavaScript</li>
+              <li><span class="skill-dot"></span>C</li>
+              <li><span class="skill-dot"></span>C++</li>
+              <li><span class="skill-dot"></span>PyTorch</li>
+              <li><span class="skill-dot"></span>SQL</li>
+              <li><span class="skill-dot"></span>ARM Assembly</li>
+            </ul>
+          </div>
+          <div class="skill-col reveal delay-2">
+            <div class="skill-col-title">Frameworks</div>
+            <ul class="skill-list">
+              <li><span class="skill-dot"></span>React</li>
+              <li><span class="skill-dot"></span>Node.js</li>
+              <li><span class="skill-dot"></span>Pandas</li>
+              <li><span class="skill-dot"></span>NumPy</li>
+              <li><span class="skill-dot"></span>scikit-learn</li>
+              <li><span class="skill-dot"></span>HTML / CSS</li>
+              <li><span class="skill-dot"></span>Tailwind CSS</li>
+              <li><span class="skill-dot"></span>REST APIs</li>
+            </ul>
+          </div>
+          <div class="skill-col reveal delay-3">
+            <div class="skill-col-title">CS Concepts</div>
+            <ul class="skill-list">
+              <li><span class="skill-dot"></span>Algorithms &amp; DS</li>
+              <li><span class="skill-dot"></span>Dynamic Programming</li>
+              <li><span class="skill-dot"></span>Graph Theory</li>
+              <li><span class="skill-dot"></span>Database Design</li>
+              <li><span class="skill-dot"></span>OOP &amp; Systems</li>
+              <li><span class="skill-dot"></span>Data Structures</li>
+            </ul>
+          </div>
+          <div class="skill-col reveal delay-4">
+            <div class="skill-col-title">Tools</div>
+            <ul class="skill-list">
+              <li><span class="skill-dot"></span>Git &amp; GitHub</li>
+              <li><span class="skill-dot"></span>Linux / Bash</li>
+              <li><span class="skill-dot"></span>AWS</li>
+              <li><span class="skill-dot"></span>VS Code</li>
+              <li><span class="skill-dot"></span>Docker</li>
+              <li><span class="skill-dot"></span>Google Cloud</li>
+              <li><span class="skill-dot"></span>MySQL</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="section-wrap">
+        <div class="projects-header reveal">
+          <div>
+            <div class="section-tag"><span class="section-num">03</span>Projects</div>
+            <h2 class="section-heading">Things I've<br>Built</h2>
+          </div>
+          <a href="https://github.com/Matthew-Tian5" class="view-all" target="_blank">View all on GitHub ↗</a>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card reveal delay-1">
+            <div class="project-num">01</div>
+            <div class="project-name">House Price Predictor</div>
+            <p class="project-desc">ML model trained on the California Housing dataset to predict house prices using
+              regression techniques, data preprocessing, and model evaluation pipelines.</p>
+            <div class="project-tags"><span class="tag">Python</span><span class="tag">scikit-learn</span><span
+                class="tag">ML</span></div>
+            <a href="https://github.com/Matthew-Tian5/House-Price-Predictor-ML" class="project-link"
+              target="_blank">View on GitHub ↗</a>
+          </div>
+          <div class="project-card reveal delay-2">
+            <div class="project-num">02</div>
+            <div class="project-name">Sentiment Analyzer</div>
+            <p class="project-desc">PyTorch neural network classifying IMDB movie reviews using word embeddings and mean
+              pooling. Achieves 85% test accuracy across 25,000 reviews.</p>
+            <div class="project-tags"><span class="tag">Python</span><span class="tag">PyTorch</span><span
+                class="tag">NLP</span></div>
+            <a href="https://github.com/Matthew-Tian5/Sentiment-Analyzer-Neural-Net-" class="project-link"
+              target="_blank">View on GitHub ↗</a>
+          </div>
+          <div class="project-card reveal delay-3">
+            <div class="project-num">03</div>
+            <div class="project-name">MediVision</div>
+            <p class="project-desc">Pharmaceutical web app powered by Google Gemini to help patients, doctors, and
+              pharmacists prescribe and manage medications safely and on time.</p>
+            <div class="project-tags"><span class="tag">TypeScript</span><span class="tag">Gemini AI</span><span
+                class="tag">Full-Stack</span></div>
+            <a href="https://github.com/Matthew-Tian5/MediVision" class="project-link" target="_blank">View on GitHub
+              ↗</a>
+          </div>
+          <div class="project-card reveal delay-1">
+            <div class="project-num">04</div>
+            <div class="project-name">Vulnerability Scanner</div>
+            <p class="project-desc">Python security tool that scans networks and websites for known vulnerabilities,
+              generating a detailed report of discovered security holes.</p>
+            <div class="project-tags"><span class="tag">Python</span><span class="tag">Cybersecurity</span><span
+                class="tag">Networking</span></div>
+            <a href="https://github.com/Matthew-Tian5/Vulnerability-Scanner" class="project-link" target="_blank">View
+              on GitHub ↗</a>
+          </div>
+          <div class="project-card reveal delay-2">
+            <div class="project-num">05</div>
+            <div class="project-name">YouTube Downloader</div>
+            <p class="project-desc">Python CLI tool that lets users paste any YouTube link and download the video for
+              free, bypassing paid access restrictions.</p>
+            <div class="project-tags"><span class="tag">Python</span><span class="tag">Web Scraping</span><span
+                class="tag">CLI</span></div>
+            <a href="https://github.com/Matthew-Tian5/Free-Youtube-Video-Download" class="project-link"
+              target="_blank">View on GitHub ↗</a>
+          </div>
+          <div class="project-card reveal delay-3">
+            <div class="project-num">06</div>
+            <div class="project-name">AI Wikipedia Bot</div>
+            <p class="project-desc">AI-powered chatbot that searches Wikipedia's database to answer any question the user
+              asks, surfacing accurate, sourced information instantly.</p>
+            <div class="project-tags"><span class="tag">Python</span><span class="tag">AI</span><span
+                class="tag">Wikipedia API</span></div>
+            <a href="https://github.com/Matthew-Tian5/AI-Bot" class="project-link" target="_blank">View on GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="section-wrap">
+        <div class="reveal">
+          <div class="section-tag"><span class="section-num">04</span>Experience</div>
+          <h2 class="section-heading">Education &amp;<br>Work</h2>
+        </div>
+        <div class="exp-layout">
+          <!-- EDUCATION -->
+          <div class="reveal delay-1">
+            <div class="exp-col-title">Education</div>
+            <div class="timeline-item">
+              <div class="timeline-date">2022 — 2028</div>
+              <div class="timeline-role">BSc Computer Science &amp; BA Economics</div>
+              <div class="timeline-org-row">
+                <div class="org-logo">
+                  <!-- Replace with: <img src="images/logos/wlu.png" alt="WLU"> -->
+                  WLU
+                </div>
+                <span class="timeline-org">Wilfrid Laurier University · Waterloo, ON</span>
+              </div>
+              <div class="timeline-desc">Double degree combining rigorous CS theory — algorithms, systems, databases, AI
+                — with microeconomics and quantitative methods. Building toward US graduate school applications in
+                CS/AI.</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">May 2025 — July 2025</div>
+              <div class="timeline-role">Google Cybersecurity Certificate</div>
+              <div class="timeline-org-row">
+                <div class="org-logo">
+                  <!-- Replace with: <img src="images/logos/google.png" alt="Google"> -->
+                  G
+                </div>
+                <span class="timeline-org">Google · Online</span>
+              </div>
+              <div class="timeline-desc">Completed Google's professional training program covering network security,
+                threat detection, incident response, and risk assessment. Gained hands-on experience with Linux CLI, SQL
+                for security analysis, and the NIST Cybersecurity Framework.</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">Graduated 2022</div>
+              <div class="timeline-role">Ontario Secondary School Diploma</div>
+              <div class="timeline-org-row">
+                <div class="org-logo">
+                  <!-- Replace with: <img src="images/logos/gonzaga.png" alt="Gonzaga"> -->
+                  SAG
+                </div>
+                <span class="timeline-org">St. Aloysius Gonzaga Secondary School · Mississauga, ON</span>
+              </div>
+              <div class="timeline-desc">Completed secondary school education in Mississauga, Ontario.</div>
+            </div>
+          </div>
+          <!-- WORK -->
+          <div class="reveal delay-2">
+            <div class="exp-col-title">Work &amp; Activities</div>
+            <div class="timeline-item">
+              <div class="timeline-date">Sep 2025 — Dec 2025</div>
+              <div class="timeline-role">Frontend Engineering Intern</div>
+              <div class="timeline-org-row">
+                <div class="org-logo">
+                  <!-- Replace with: <img src="images/logos/runwayto.png" alt="RunwayTo"> -->
+                  RT
+                </div>
+                <span class="timeline-org">RunwayTo · Toronto, ON</span>
+              </div>
+              <div class="timeline-desc">Implemented responsive frontend features for 3 client projects using HTML5, CSS3,
+                and JavaScript through iterative sprint cycles, improving user satisfaction scores by 25%. Configured
+                deployment pipeline via S-Panel, integrating with a MySQL photo database to serve 10,000+ images at a
+                2-second average load time.</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">2023 — Present</div>
+              <div class="timeline-role">Project Lead — Verdanza Tech</div>
+              <div class="timeline-org-row">
+                <div class="org-logo">
+                  <!-- Replace with: <img src="images/logos/enactus.png" alt="Enactus"> -->
+                  EN
+                </div>
+                <span class="timeline-org">Enactus Laurier · Waterloo, ON</span>
+              </div>
+              <div class="timeline-desc">Leading a student-driven tech initiative building software to create measurable
+                economic opportunity for underserved communities.</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">May 2024 — Aug 2024</div>
+              <div class="timeline-role">Software Intern</div>
+              <div class="timeline-org-row">
+                <div class="org-logo">
+                  <!-- Replace with: <img src="images/logos/blowout.png" alt="Blowout"> -->
+                  BT
+                </div>
+                <span class="timeline-org">Blowout Technologies · Remote</span>
+              </div>
+              <div class="timeline-desc">Developed a drag-and-drop web app enabling small businesses and creators to
+                publish mobile apps to the Play Store and App Store. Built with Swift, JavaScript, and ASP.NET on AWS
+                infrastructure.</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">2024</div>
+              <div class="timeline-role">Freelance Developer</div>
+              <div class="timeline-org-row">
+                <div class="org-logo">
+                  <!-- Replace with: <img src="images/logos/esther.png" alt="Esther"> -->
+                  EMS
+                </div>
+                <span class="timeline-org">Esther Music Studio · Remote</span>
+              </div>
+              <div class="timeline-desc">Built and deployed a student-teacher platform with messaging and Google Picker
+                API file sharing. Live at mybc.esthermusicstudio.com.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="section-wrap">
+        <!-- Section tag moves ABOVE the grid -->
+        <div class="reveal">
+          <div class="section-tag"><span class="section-num">05</span>Contact</div>
+        </div>
+        <div class="contact-grid">
+          <div class="reveal">
+            <h2 class="section-heading" style="margin-bottom:28px">Let's<br>Talk</h2>
+            <p class="contact-intro">Whether it's a research opportunity, a project collaboration, or just a conversation
+              about CS and AI — I'd love to hear from you.</p>
+            <div class="contact-links">
+              <div class="contact-link-item">
+                <span class="contact-link-label">Email</span>
+                <a href="mailto:matthew.tian2005@gmail.com" class="contact-link-value">matthew.tian2005@gmail.com ↗</a>
+              </div>
+              <div class="contact-link-item">
+                <span class="contact-link-label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/matthew-tian-toronto/"
+                  class="contact-link-value">linkedin.com/in/matthew-tian-toronto ↗</a>
+              </div>
+              <div class="contact-link-item">
+                <span class="contact-link-label">GitHub</span>
+                <a href="https://github.com/Matthew-Tian5" class="contact-link-value"
+                  target="_blank">github.com/Matthew-Tian5 ↗</a>
+              </div>
+              <div class="contact-link-item">
+                <span class="contact-link-label">Instagram</span>
+                <a href="https://www.instagram.com/matthew.0520m/" class="contact-link-value"
+                  target="_blank">@matthew.0520m ↗</a>
+              </div>
+              <div class="contact-link-item">
+                <span class="contact-link-label">Location</span>
+                <span class="contact-link-value">Mississauga, Waterloo, Toronto · Ontario, Canada</span>
+              </div>
+            </div>
+          </div>
+          <div class="reveal contact-form-wrapper">
+            <div class="delay-contact">
+              <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                  <label class="form-label" for="senderName">Your Name</label>
+                  <input class="form-input" type="text" id="senderName" placeholder="Jane Smith">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="senderEmail">Email Address</label>
+                  <input class="form-input" type="email" id="senderEmail" placeholder="jane@example.com">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="subject">Subject</label>
+                  <input class="form-input" type="text" id="subject" placeholder="Research opportunity, collaboration...">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="message">Message</label>
+                  <textarea class="form-textarea" id="message" placeholder="Tell me about it..."></textarea>
+                </div>
+                <button class="form-submit" type="submit">Send Message →</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <!-- FOOTER -->
   <footer>
     <div class="footer-name">Matthew — CS &amp; Economics</div>
     <div class="footer-copy">© 2026 Matthew Tian</div>
     <div class="footer-links">
-      <a href="https://github.com" target="_blank">GitHub</a>
-      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-      <a href="mailto:hello@matthew.dev">Email</a>
+      <a href="https://github.com/Matthew-Tian5" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/matthew-tian-toronto/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:matthew.tian2005@gmail.com">Email</a>
     </div>
   </footer>
 
@@ -556,13 +569,11 @@
     // Hamburger menu
     const hamburger = document.getElementById('navHamburger');
     const mobileMenu = document.getElementById('mobileMenu');
-
     hamburger.addEventListener('click', () => {
       hamburger.classList.toggle('open');
       mobileMenu.classList.toggle('open');
       document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
     });
-
     mobileMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         hamburger.classList.remove('open');
@@ -571,19 +582,15 @@
       });
     });
 
-
     document.getElementById('contactForm').addEventListener('submit', function (e) {
       e.preventDefault();
-
       const name = document.getElementById('senderName').value;
       const email = document.getElementById('senderEmail').value;
       const subject = document.getElementById('subject').value;
       const message = document.getElementById('message').value;
-
       const to = 'matthew.tian2005@gmail.com';
       const body = `Hi Matthew,%0D%0A%0D%0A${encodeURIComponent(message)}%0D%0A%0D%0A— ${encodeURIComponent(name)}%0D%0AReply to: ${encodeURIComponent(email)}`;
       const sub = encodeURIComponent(subject || 'Portfolio Inquiry');
-
       window.location.href = `mailto:${to}?subject=${sub}&body=${body}`;
     });
   </script>
